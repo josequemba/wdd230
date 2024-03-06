@@ -10,6 +10,15 @@ const lastModified = document.lastModified;
 
 document.getElementById("lastModified").textContent = `Last modification: ${lastModified}`;
 
+//Humburger menu
+const button = document.getElementById('humburgerMenu');
+const nav = document.querySelector('.nav-box');
+
+button.addEventListener('click', () => {
+	nav.classList.toggle('open');
+	button.classList.toggle('open');
+});
+
 /* //Getting location
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {

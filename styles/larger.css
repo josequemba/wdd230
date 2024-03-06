@@ -36,4 +36,27 @@
     .card1 {
         width: 100%;
     }
+
+    .nav-box {
+        display: none;
+    }
+
+    #humburgerMenu::before{
+        color: white;
+        content:"☰";
+    }
+
+    #humburgerMenu {
+        display: unset;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+    }
+    
+    .open {
+        display: unset;
+    }
 }

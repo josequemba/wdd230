@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#humburgerMenu {
+    display: none;
+}
+
 /*nav bar*/
 header {
     background-color: rgb(12, 59, 35);
@@ -180,3 +184,12 @@ footer{
 .contentspan{
     text-align: center; 
 }
+
+#humburgerMenu.open::before {
+    content: "❎";
+}
+
+.open ul {
+    background-color: black;
+}
+

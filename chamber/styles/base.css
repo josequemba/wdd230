@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: #00b9e8;
     --secondary-color: #ffa500;
     --accent1-color: #bebfc5;
@@ -6,7 +6,7 @@
 
     --heading-font: sans-serif;
     --paragraph-font: "Montserrat", sans-serif;
-}
+} */
 
 * {
     margin: 0px;
@@ -24,14 +24,14 @@ header{
     grid-template-columns: 10% 5% 75% 10%; /* 2fr 1fr 6fr 2fr */
     grid-template-rows: 25px;
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: #00b9e8;
     text-align: center;
 }
 
 header .a {
     display: block;
     color: black;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     font-size: 20px;
     grid-column: 3/4;
 }
@@ -39,7 +39,7 @@ header .a {
 header .b {
     display: block;
     color: black;
-    font-family: var(--paragraph-font);
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     grid-column: 3/4;
     /* margin-top: 2rem; */
@@ -146,7 +146,7 @@ header img {
     font-size: 15px;
     font-weight: bold;
     color: black;
-    background-color: var(--primary-color); 
+    background-color: #00b9e8; 
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -155,7 +155,7 @@ header img {
   }
   
 .cta-button:hover {
-    background-color: var(--primary-color); 
+    background-color: #00b9e8; 
 }
 
 /*events-box*/
@@ -165,20 +165,20 @@ header img {
     margin-top: 40px;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: var(--secondary-color);
+    background-color: #ffa500;
     border-radius: 5px;
 }
 
 .events-box h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     text-align: center;
     padding-top: 40px;
 }
 
 .events-box p {
-    font-family: var(--paragraph-font);
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -225,7 +225,7 @@ header img {
 .text2 {
     position: absolute;
     color: black;
-    font-family: var(--paragraph-font);
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     margin-top: 5px; 
     width: 150px; 
@@ -276,23 +276,23 @@ header img {
 
 .weather-card h2 {
     margin-bottom: 10px;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     font-size: 20px;
 }
 
 .weather-card p {
     margin: 5px 0;
-    font-size: var(--paragraph-font);
+    font-size: "Montserrat", sans-serif;
     font-size: 15px;
 }
 
 .weather-forecast h3 {
-    font-size: var(--heading-font);
+    font-size: sans-serif;
     font-size: 17px;
 }
 
 .weather-forecast p {
-    font-size: var(--paragraph-font);
+    font-size: "Montserrat", sans-serif;
     font-size: 13px;
 }
 
@@ -331,24 +331,24 @@ header img {
 .spotlight h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     font-size: 20px;
 }
 
 .spotlight p {
     margin-bottom: 15px;
-    font-family: var(--paragraph-font);
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
 }
 
 .spotlight .btn {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: #00b9e8;
     color: black;
     padding: 8px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-family: var(--paragraph-font);
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
 }
 
@@ -362,14 +362,14 @@ footer {
 .contact-info, .developer-info {
     margin-bottom: 20px;
     color: white;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     font-size: 15px;
 }
 
 .contact-info h4, .developer-info h4 {
     margin-bottom: 10px;
     color: white;
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     font-size: 20px;
 }
 

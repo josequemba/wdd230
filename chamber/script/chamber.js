@@ -59,3 +59,9 @@ for (let i = 0; i < buttonMenus.length; i++) {
         buttonMenus[i].classList.toggle('open');
     });
 }
+
+//Getting current year
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
+document.getElementById("year").textContent = currentDate.getUTCFullYear();

@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #00b9e8;
+    --secondary-color: #ffa500;
+    --accent1-color: #bebfc5;
+    --accent2-color: #004225;
+
+    --heading-font: sans-serif;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .spotlight {
+        flex-basis: calc(50% - 20px);
+    }
+
+    /*humburger menu */
+    .nav-box {
+        display: none;
+    }
+    .hamburger-menu {
+        position: absolute;
+        right: 5px;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 2px;
+    }
+    
+    .line1, .line2, .line3 {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: transform 0.3s;
+    }
+
+    .open .line1 {
+        transform: rotate(45deg) translateY(5px);
+    }
+    
+    .open .line2 {
+        opacity: 0;
+    }
+    
+    .open .line3 {
+        transform: rotate(-45deg) translateY(-5px);
+    }
+
+    .bar-menu {
+        background-color: rgba(0, 93, 116, 1);
+        width: 100%;
+        height: 22px;
+    }
+
+    .open {
+        display: block;
+    }
+    
+    .nav-box ul {
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    /* header */
+    header{
+        display: grid;
+        grid-template-columns: 10% 8% 75% 10%; /* 2fr 1fr 6fr 2fr */
+        grid-template-rows: 25px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    
+    header .b {
+        display: none;
+    }
+    
+    /*events-box*/
+    .events-box {
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+    }
+}

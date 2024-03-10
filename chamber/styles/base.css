@@ -282,17 +282,17 @@ header img {
 
 .weather-card p {
     margin: 5px 0;
-    font-size: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 15px;
 }
 
 .weather-forecast h3 {
-    font-size: sans-serif;
+    font-family: "Montserrat";
     font-size: 17px;
 }
 
 .weather-forecast p {
-    font-size: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 13px;
 }
 
@@ -337,7 +337,7 @@ header img {
 
 .spotlight p {
     margin-bottom: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 15px;
 }
 
@@ -348,7 +348,7 @@ header img {
     padding: 8px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 14px;
 }
 

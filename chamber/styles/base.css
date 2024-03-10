@@ -30,7 +30,7 @@ header{
 
 header .a {
     display: block;
-    color: white;
+    color: black;
     font-family: var(--heading-font);
     font-size: 20px;
     grid-column: 3/4;
@@ -38,7 +38,7 @@ header .a {
 
 header .b {
     display: block;
-    color: white;
+    color: black;
     font-family: var(--paragraph-font);
     font-size: 15px;
     grid-column: 3/4;
@@ -49,7 +49,7 @@ header img {
     grid-column: 3/4;
     padding: 0px;
     width: 5rem;
-    filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7500%) hue-rotate(150deg);
+    filter: brightness(100) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(150deg);
 }
 
 /*menu*/
@@ -344,7 +344,7 @@ header img {
 .spotlight .btn {
     display: inline-block;
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     padding: 8px 20px;
     border-radius: 5px;
     text-decoration: none;

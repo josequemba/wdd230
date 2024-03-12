@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Quemba - WDD 230 - Web Frontend Development - Responsive Image</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Jose Quemba">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/local-storage.css">
+    <link href="style.css" rel="stylesheet" media="all" />
+    <link href="portrait.css" rel="stylesheet" media="(orientation:portrait)" />
+    <link href="print.css" rel="stylesheet" media="print" />
+</head>
+<body>
+    <header>
+        
+    </header>
+        <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" placeholder="Alma 5">
+        <button type="submit">Add Chapter</button>
+        <ul id="list"></ul>
+    </main>
+    <footer>
+        <p id="copyright">&copy;<span id="year"></span> - Jose Eliud Quemba - Angola - Responsive Image</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="script/local-storage.js"></script>
+</body>
+</html>

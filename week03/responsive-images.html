@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Quemba - WDD 230 - Web Frontend Development - Responsive Image</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Jose Quemba">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link href="style.css" rel="stylesheet" media="all" />
+    <link href="portrait.css" rel="stylesheet" media="(orientation:portrait)" />
+    <link href="print.css" rel="stylesheet" media="print" />
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="drapper temple larger image" width="1200" height="600">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">&copy;<span id="year"></span> - Jose Eliud Quemba - Angola - Responsive Image</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="script/"></script>
+</body>
+</html>

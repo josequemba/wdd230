@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    padding: 0;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    align-content: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: black;
+    animation: fadeIn 5s ease forwards;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: rgba(0, 93, 116, 1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

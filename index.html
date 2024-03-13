@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profilepicture.jpg" alt="Profile photo" width="75" height="100">
+        <img loading="lazy" src="images/profilepicture.webp" alt="Profile photo" width="75" height="100">
         <span>Jose Eliud Quemba</span>
         <button id="mode"> </button>
     </header>
@@ -39,6 +39,14 @@
             <li><a href="#Form">Form</a></li>
         </ul>
     </nav>
+    <div class="temple-container">
+        <picture>
+            <source loading="lazy" srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source loading="lazy" srcset="images/hero-median.webp" media="(min-width: 401px) and (max-width: 960px)">
+            <img loading="lazy" src="images/hero-larger.webp" alt="Favorite Latter-day Temple" width="1500" height="750">
+        </picture>
+        <div class="temple-label">Salt Lake City Temple</div>
+    </div>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
@@ -67,6 +75,9 @@
         </div>
         <div class="spacerbottom"></div>
     </main>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5916.83657420471!2d-111.64814419390007!3d40.251164933472964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d90bb13517f57%3A0x2466f47e7c66c579!2sBrigham%20Young%20University%20Museum%20of%20Art%20(MOA)!5e0!3m2!1sen!2sus!4v1710292196694!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p id="copyright">&copy;<span id="year"></span> - Jose Eliud Quemba - Angola</p>
         <p id="lastModified"></p>

@@ -71,11 +71,17 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${lon
  */
 
 //get visited times
-if (localStorage.getItem('visitCount')) {
-    let visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
-    localStorage.setItem('visitCount', visitCount);
+const visitsDisplay = document.getElementById("pagevisits");
+let visitCount = Number(window.localStorage.getItem("numVisits")) || 0;
+
+if (visitCount !== 0) {
+    visitsDisplay.textContent = `Page Visits: ${visitCount}`;
 } else {
-    localStorage.setItem('visitCount', 1);
-}
-const visitCount = localStorage.getItem('visitCount');
-document.getElementById("pagevisits").textContent = `Page Visits: ${visitCount}`;
+    localStorage.setItem('numVisits', 1);
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+};
+
+visitCount++;
+
+localStorage.setItem("numVisits", visitCount);
+

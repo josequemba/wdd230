@@ -59,4 +59,16 @@
     .open {
         display: unset;
     }
+
+    #mode {
+        z-index: 1;
+        font-family: 'Roboto', sans-serif;
+        display: unset;
+        font-size: .8rem;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 1.2rem;
+        left: 50%;
+    }
 }

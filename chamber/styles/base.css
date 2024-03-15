@@ -556,6 +556,7 @@ footer {
   .weeks span.active {
     background: #f78536;
     border-radius: 50%;
+    color: black;
   }
   
   .weeks span:not(.last-month):hover {

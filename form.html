@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML Forms Activity">
+    <meta name="author" content="Jose Quemba">
+
+    <title>HTML Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Group Activity</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Form</a></li>
+            <li><a href="#">Designing Methods</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Forms</h1>
+
+        <form method="get" action="thanks.html" class="wfl">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div id="message"></div>
+                <label>Username* <input type="text" id="user-name" name="username" required></label> 
+                <label>Password* <input type="password" id="password1" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Re-enter Password* <input type="password" id="password2" name="re-enter-password" required ></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="example@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label>Page Rating<input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5"></label>
+                <span id="current-rating">5</span>
+            </fieldset>
+
+            <input type="submit" id="submit-buttom" value="Record Information">
+
+        </form>
+
+        <p>Thanks for applying to create a course for our online library. We will get back to you within a week with a
+            response.</p>
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; 2024 &bull; Jose Quemba &bull; 717-446-3207
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

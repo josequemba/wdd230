@@ -695,7 +695,6 @@ body {
   font-family: var(--heading-font);
 }
 
-
 .form-a fieldset {
   margin: 2rem 0;
   border: 1px solid #000000;
@@ -747,53 +746,42 @@ body {
   border-bottom: solid 3px green;
 }
 
-/* Table */
-table {
-  border-collapse: collapse;
-  max-width: 600px;
-  margin-bottom: 20px;
-  margin-right: 25px;
-  font-family: var(--paragraph-font);
-}
-
 legend {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-th,
-td {
-  padding: 12px;
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+th, td {
+  padding: 8px;
   text-align: center;
 }
-
 th {
   background-color: #f2f2f2;
 }
-
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
 }
-
-th[scope="colgroup"] {
-  font-size: 1.2em;
+th[colspan="5"] {
+  background-color: #ddd;
 }
-
-th[scope="col"] {
-  font-weight: bold;
-}
-
-th[headers] {
-  font-weight: bold;
-}
-
 td {
   font-size: 1.2em;
 }
-
-td:hover {
-  background-color: #e2e2e2;
+th[scope="colgroup"] {
+  font-size: 1.2em;
+}
+th[scope="col"] {
+  font-weight: bold;
+}
+th[headers] {
+  font-weight: bold;
 }
 
 /* thankyou page */

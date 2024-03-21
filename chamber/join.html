@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Quemba - WDD 230 - Chamber Website</title>
+    <meta name="description"
+        content="promote the business interests of the members of the organization and promote the area, attracting additional business, tourism, and people">
+    <meta name="author" content="Jose Quemba">
+
+    <meta property="og:title" content="Jose Quemba - WDD 230 - Chamber Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-logo.gif">
+    <meta property="og:url" content="https://josequemba.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.gif">
+</head>
+
+<body>
+    <header>
+        <a href=""><img src="images/chamber-logo.gif" alt="CookBook_Logo"></a>
+        <span class="a">Welcome to the Heart of Innovation</span>
+        <span class="b">CookBook Chamber of Commerce</span>
+    </header>
+    <div class="bar-menu">
+        <div class="hamburger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    <nav class="nav-box">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a class="active" href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-box">
+            <form method="get" action="thankyou.html" class="form-a">
+                <label>First Name*<input type="text" name="fname" id="f-name" required></label>
+                <label>Last Name*<input type="text" name="lname" id="l-name" required></label>
+                <label>Title/Position<input type="text" name="titleorposition" id="title-or-position"
+                        pattern="[a-zA-Z\- ]{7,}"></label>
+                <label>Email Address*<input type="email" name="email" id="email" required
+                        placeholder="example@gmai.com"></label>
+                <label>Mobile Phone Number<input type="tel" name="phone" id="phone" required></label>
+                <label>Business/Organization's Name<input type="text" name="businessorganization"
+                        id="business-organization" required></label>
+
+                <fieldset>
+                    <legend>Membership Level Table</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="5" scope="colgroup">Subscription Plans</th>
+                            </tr>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">NP Membership (no fee)</th>
+                                <th scope="col">Bronze Membership</th>
+                                <th scope="col">Silver Membership</th>
+                                <th scope="col">Gold Membership</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Access to Recipes</th>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <th>Weekly Newsletter</th>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <th>Access to Digital Archives</th>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <th>Access to Community Forums</th>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">Prices</th>
+                                <th scope="col"><input type="radio" name="yes" value="NP"> $0</th>
+                                <th scope="col"><input type="radio" name="yes" value="Bronze"> $20</th>
+                                <th scope="col"><input type="radio" name="yes" value="Silver"> $30</th>
+                                <th scope="col"><input type="radio" name="yes" value="Gold"> $45</th>
+                            </tr>
+                        </tfoot>
+                        
+                    </table>
+                </fieldset>
+    
+                <label>Business/Organization Description
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+                </label>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+    
+                <input type="submit" value="Join">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p></p>
+        <p></p>
+        <div class="social-buttons">
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: quemba.joseeliud@gmail.com</p>
+                <p>Phone: +1 717 446 3207</p>
+                <p>Address: Provo, US</p>
+            </div>
+            <div class="developer-info">
+                <h4>Developer Information</h4>
+                <p>Developer: Jose Eliud Quemba</p>
+                <p>Project: WDD 230 - Chamber Website</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+                &copy;<span id="year"></span>
+            </div>
+            <a href="https://www.facebook.com/share/Z91YX1rftYWjV2zi/?mibextid=qi2Omg" class="social-button facebook"
+                target="_blank"><img src="images/facebook.svg.png" alt="facebook_logo" width="60" height="60"></a>
+            <a href="https://www.instagram.com/jose.eliud.79?utm_source=qr&igsh=MTdzYWh1aXFja3diZA=="
+                class="social-button instagram" target="_blank"><img src="images/instagram.svg.png" alt="instagram_logo"
+                    width="60" height="60"></a>
+            <a href="https://wa.me/qr/UQ27MTWW5VSSL1" class="social-button whatsapp" target="_blank"><img
+                    src="images/whatsapp.svg.png" alt="whatsapp_logo" width="60" height="60"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

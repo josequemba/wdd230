@@ -4,7 +4,7 @@ function displayRating() {
 }
 document.getElementById("page-rating").addEventListener("input", displayRating);
 
-
+//password
 const pass1 = document.getElementById("password1");
 const pass2 = document.getElementById("password2");
 const message = document.getElementById("message");

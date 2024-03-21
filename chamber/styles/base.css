@@ -750,7 +750,6 @@ body {
 /* Table */
 table {
   border-collapse: collapse;
-  width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
   margin-right: 25px;
@@ -804,6 +803,7 @@ td:hover {
   margin: 0;
   padding: 0;
 }
+
 .container-thankyou {
   max-width: 600px;
   margin: 100px auto;
@@ -813,10 +813,12 @@ td:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .container-thankyou h1 {
   color: var(--accent2-color);
   margin-bottom: 20px;
 }
+
 .container-thankyou p {
   color: #333;
   font-size: 18px;

@@ -37,9 +37,9 @@
                 <legend>Personal Information</legend>
                 <div id="message"></div>
                 <label>Username* <input type="text" id="user-name" name="username" required></label> 
-                <label>Password* <input type="password" id="password1" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Password* <input type="password" id="password1" name="password" required pattern="[A-Za-z0-9]{8,}"></label> <!-- "[\w]{8,}" -->
                 <label>Re-enter Password* <input type="password" id="password2" name="re-enter-password" required ></label>
-                <label>Email* <input type="email" id="email" name="email" placeholder="example@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="Please enter a valid email address" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
                 <label>Page Rating<input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5"></label>
                 <span id="current-rating">5</span>
             </fieldset>

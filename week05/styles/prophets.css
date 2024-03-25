@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Added to stack header and image */
+    align-items: center; /* Center horizontally */
+    margin: 0 auto;
+    padding: 20px;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #3300fe;
+}
+
+main img {
+    width: 40%;
+    height: auto;
+    border-bottom: 2px solid #333;
+    margin: 0 auto; /* Center the image horizontally */
+
+}
+
+main h2 {
+    padding: 20px;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #3300fe;
+}
+
+main p {
+    text-align: center;
+    padding: 0 20px 20px;
+    font-size: 18px;
+    margin: 0;
+    color: #000000;
+}
+
+section {
+    text-align: center;
+    border: 1px solid rgb(106, 106, 106);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(219, 217, 217);
+}

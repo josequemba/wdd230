@@ -1,0 +1,119 @@
+{
+    "weeks": [
+       { 
+            "week": "week 1",
+                "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+                }
+            ]
+        },
+        { 
+            "week": "week 2",
+                "links": [
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Home Page"
+                },
+                {
+                    "url":"week02/design.html",
+                    "title":"Design Principles"
+                },
+                {
+                    "url":"favicon.ico",
+                    "title":"Favicon"
+                },
+                {
+                    "url":"index.html",
+                    "title":"Social Media Meta"
+                },
+                {
+                    "url": "https://codepen.io/josequemba/pen/LYvpYJL",
+                    "title": "Humburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        { 
+            "week": "week 3",
+                "links": [
+                {
+                    "url":"chamber/discover.html",
+                    "title":"Chamber Home Page - Discover Page"
+                },
+                {
+                    "url":"week03/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title":"Lazy Load Demonstration"
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title":"responsive Images"
+                },
+                {
+                    "url":"week03/local-storage.html",
+                    "title":"Local Storage"
+                }
+            ]
+        },
+        { 
+            "week": "week 4",
+                "links": [
+                {
+                    "url":"https://codepen.io/josequemba/pen/jORyoqp",
+                    "title":"CSS Pseudo-Classes"
+                },
+                {
+                    "url":"week04/tablebuild.html",
+                    "title":"HTML Tables for Data Presentation"
+                },
+                {
+                    "url":"week04/Form-start/thanks.html",
+                    "title":"HTML Forms"
+                },
+                {
+                    "url":"form.html",
+                    "title":"Team Activity - Forms"
+                },
+                {
+                    "url":"chamber/join.html",
+                    "title":"Chamber Home Page - Join"
+                }
+            ]
+        },
+        { 
+            "week": "week 5",
+                "links": [
+                {
+                    "url":"https://codepen.io/josequemba/pen/bGJRpVB",
+                    "title":"CSS Pseudo-elements"
+                },
+                {
+                    "url":"week05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"The Fetch API"
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+    
+
+}

@@ -30,6 +30,20 @@ modeButton.addEventListener("click", () => {
     modeButton.classList.toggle('dark-mode');
 });
 
+//
+
+const baseURL = "https://josequemba.github.io/wdd230/";
+const linksURL = "https://josequemba.github.io/wdd230/data/links.json";
+
+async function getLinks(link) {
+    const response = await fetch(link);
+    const data = await response.json();
+    console.log(data);
+}
+
+getLinks(baseURL);
+getLinks(linksURL);
+
 /* //Getting location
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {

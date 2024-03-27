@@ -41,7 +41,6 @@ async function getLinks(link) {
     console.log(data);
 }
 
-getLinks(baseURL);
 getLinks(linksURL);
 
 /* //Getting location

@@ -9,7 +9,7 @@
                 },
                 {
                     "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "title":"Media Queries"
                 }
             ]
         },
@@ -59,7 +59,7 @@
                 },
                 {
                     "url":"week03/responsive-images.html",
-                    "title":"responsive Images"
+                    "title":"Responsive Images"
                 },
                 {
                     "url":"week03/local-storage.html",

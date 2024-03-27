@@ -1,8 +1,8 @@
 {
     "weeks": [
        { 
-            "week": "week 1",
-                "links": [
+            "week": "Week 01:",
+            "links": [
                 {
                     "url":"week01/holygrail.html",
                     "title":"HG Layout"
@@ -14,8 +14,8 @@
             ]
         },
         { 
-            "week": "week 2",
-                "links": [
+            "week": "Week 02:",
+            "links": [
                 {
                     "url":"chamber/index.html",
                     "title":"Chamber Home Page"
@@ -43,8 +43,8 @@
             ]
         },
         { 
-            "week": "week 3",
-                "links": [
+            "week": "Week 03:",
+            "links": [
                 {
                     "url":"chamber/discover.html",
                     "title":"Chamber Home Page - Discover Page"
@@ -68,8 +68,8 @@
             ]
         },
         { 
-            "week": "week 4",
-                "links": [
+            "week": "Week 04:",
+            "links": [
                 {
                     "url":"https://codepen.io/josequemba/pen/jORyoqp",
                     "title":"CSS Pseudo-Classes"
@@ -93,8 +93,8 @@
             ]
         },
         { 
-            "week": "week 5",
-                "links": [
+            "week": "Week 05:",
+            "links": [
                 {
                     "url":"https://codepen.io/josequemba/pen/bGJRpVB",
                     "title":"CSS Pseudo-elements"

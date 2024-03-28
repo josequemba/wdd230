@@ -811,3 +811,60 @@ th[headers] {
   color: #333;
   font-size: 18px;
 }
+
+/* Discovery */
+
+/* Container for members */
+#members-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Individual member */
+.member {
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded image corners */
+}
+
+/* Grid view for members */
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* List view for members */
+.list-view .member {
+  display: flex;
+  align-items: center;
+}
+
+/* Button style */
+button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

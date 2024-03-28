@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Quemba - WDD 230 - Chamber Website</title>
+    <meta name="description" content="promote the business interests of the members of the organization and promote the area, attracting additional business, tourism, and people">
+    <meta name="author" content="Jose Quemba">
+
+    <meta property="og:title" content="Jose Quemba - WDD 230 - Chamber Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-logo.gif">
+    <meta property="og:url" content="https://josequemba.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.gif">
+</head>
+<body>
+    <header>
+        <a href=""><img src="images/chamber-logo.gif" alt="CookBook_Logo"></a>
+        <span class="a">Welcome to the Heart of Innovation</span>
+        <span class="b">CookBook Chamber of Commerce</span>
+    </header>
+    <div class="bar-menu">
+        <div class="hamburger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    <nav class="nav-box">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a class="active" href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="members-box">
+            <button id="button-view"></button>
+            <div id="members-container" class="grid-view">
+              <!-- Member cards or list items will be added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+        <p></p>
+        <div class="social-buttons">
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: quemba.joseeliud@gmail.com</p>
+                <p>Phone: +1 717 446 3207</p>
+                <p>Address: Provo, US</p>
+            </div>
+            <div class="developer-info">
+                <h4>Developer Information</h4>
+                <p>Developer: Jose Eliud Quemba</p>
+                <p>Project: WDD 230 - Chamber Website</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+                &copy;<span id="year"></span>
+            </div>
+            <a href="https://www.facebook.com/share/Z91YX1rftYWjV2zi/?mibextid=qi2Omg" class="social-button facebook" target="_blank"><img src="images/facebook.svg.png" alt="facebook_logo" width="60" height="60"></a>
+            <a href="https://www.instagram.com/jose.eliud.79?utm_source=qr&igsh=MTdzYWh1aXFja3diZA==" class="social-button instagram" target="_blank"><img src="images/instagram.svg.png" alt="instagram_logo" width="60" height="60"></a>
+            <a href="https://wa.me/qr/UQ27MTWW5VSSL1" class="social-button whatsapp" target="_blank"><img src="images/whatsapp.svg.png" alt="whatsapp_logo" width="60" height="60"></a>
+        </div>
+    </footer>
+    <script src="script/directory.js"></script>
+</body>
+</html>

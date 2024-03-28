@@ -1,0 +1,76 @@
+{
+    "members": [
+      {
+        "name": "Alpha Technologies",
+        "address": "123 Main Street, Cityville, CV",
+        "phone": "555-123-4567",
+        "website": "http://www.alphate.com",
+        "image": "alpha.jpg",
+        "membership_level": "Gold",
+        "other_information": "Alpha Technologies leads in AI-driven solutions for businesses."
+      },
+      {
+        "name": "Innovations B",
+        "address": "456 Innovation Avenue, Innovatown, IT",
+        "phone": "555-987-6543",
+        "website": "http://www.betainovate.com",
+        "image": "beta.jpg",
+        "membership_level": "Silver",
+        "other_information": "Beta Innovations pioneers next-gen technologies for sustainability."
+      },
+      {
+        "name": "Gamma Solutions",
+        "address": "789 Gamma Boulevard, Gammaville, GV",
+        "phone": "555-543-2109",
+        "website": "http://www.gammant.com",
+        "image": "membersimage/logo-1.jpeg",
+        "membership_level": "Bronze",
+        "other_information": "Gamma Enterprises delivers cutting-edge solutions for global challenges."
+      },
+      {
+        "name": "Dynamics",
+        "address": "101 Delta Drive, Deltatown, DT",
+        "phone": "555-555-5555",
+        "website": "http://www.deltadyamics.com",
+        "image": "delta.jpg",
+        "membership_level": "Gold",
+        "other_information": "Delta Dynamics specializes in innovative software solutions for businesses."
+      },
+      {
+        "name": "Epsilon",
+        "address": "777 Epsilon Street, Epsilonton, ET",
+        "phone": "555-777-8888",
+        "website": "http://www.epsilonolutions.com",
+        "image": "epsilon.jpg",
+        "membership_level": "Silver",
+        "other_information": "Epsilon Solutions provides tailor-made software solutions for enterprises."
+      },
+      {
+        "name": "Zeta Tech",
+        "address": "321 Zeta Avenue, Zetaville, ZV",
+        "phone": "555-321-6548",
+        "website": "http://www.zetatechgroup.com",
+        "image": "zeta.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Zeta Tech Group offers cutting-edge tech solutions for diverse industries."
+      },
+      {
+        "name": "Enterprises",
+        "address": "555 Eta Road, Etatown, ET",
+        "phone": "555-999-8888",
+        "website": "http://www.etaent.com",
+        "image": "eta.jpg",
+        "membership_level": "Gold",
+        "other_information": "Eta Enterprises pioneers revolutionary approaches to business development."
+      },
+      {
+        "name": "Solutions",
+        "address": "999 Theta Boulevard, Thetatown, TT",
+        "phone": "555-333-4444",
+        "website": "http://www.thetaolution.com",
+        "image": "theta.jpg",
+        "membership_level": "Silver",
+        "other_information": "Theta Solutions delivers comprehensive software solutions for enterprises."
+      }
+    ]
+}

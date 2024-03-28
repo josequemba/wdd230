@@ -90,7 +90,6 @@ function displayMembersList(data) {
         memberElement.innerHTML = `
         <img src="images/${member.image}" alt="${member.name}" width="150">
         <h2>${member.name}</h2>
-        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
         <p>Membership Level: <strong>${member.membership_level}</strong></p>
         `;
         membersContainer.appendChild(memberElement);

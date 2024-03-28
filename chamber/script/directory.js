@@ -51,7 +51,11 @@ async function apiFetch(link) {
         const response = await fetch(link);
         if (response.ok) {
             const data = await response.json();
-            displayMembers(data.members);
+            if (isGridView){
+                displayMembersGrid(data.members);
+            } else {
+                displayMembersList(data.members);
+            }
             //console.table(data);
         }
     } catch (error) {
@@ -60,28 +64,43 @@ async function apiFetch(link) {
 }
 apiFetch(urlMembers);
 
-function displayMembers(data) {
-    membersContainer.innerHTML = ''; // Clear previous content
+function displayMembersGrid(data) {
+    membersContainer.innerHTML = ''; 
     data.forEach(member => {
-      const memberElement = document.createElement('div');
-      memberElement.classList.add('member');
-      memberElement.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}">
+        const memberElement = document.createElement('div');
+        memberElement.classList.add('member');
+        memberElement.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name}" width="150">
         <h2>${member.name}</h2>
         <p>${member.address}</p>
         <p>Phone: ${member.phone}</p>
         <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-        <p>Membership Level: ${member.membership_level}</p>
+        <p>Membership Level: <strong>${member.membership_level}</strong></p>
         <p>${member.other_information}</p>
-      `;
-      membersContainer.appendChild(memberElement);
+        `;
+        membersContainer.appendChild(memberElement);
     });
 };
 
+function displayMembersList(data) {
+    membersContainer.innerHTML = ''; 
+    data.forEach(member => {
+        const memberElement = document.createElement('div');
+        memberElement.classList.add('member');
+        memberElement.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name}" width="150">
+        <h2>${member.name}</h2>
+        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p>Membership Level: <strong>${member.membership_level}</strong></p>
+        `;
+        membersContainer.appendChild(memberElement);
+    });
+};
 
 buttonView.addEventListener('click', ()=> {
     isGridView = !isGridView;
     updateButton ();
     membersContainer.classList.toggle('grid-view');
     membersContainer.classList.toggle('list-view');
+    apiFetch(urlMembers);
 });

@@ -16,7 +16,7 @@
         "website": "http://www.betainovate.com",
         "image": "membersimage/logo-2.jpeg",
         "membership_level": "Silver",
-        "other_information": "Beta Innovations pioneers next-gen technologies for sustainability."
+        "other_information": "Innovations B pioneers next-gen technologies for sustainability."
       },
       {
         "name": "Gamma Solutions",
@@ -25,7 +25,7 @@
         "website": "http://www.gammant.com",
         "image": "membersimage/logo-3.jpeg",
         "membership_level": "Bronze",
-        "other_information": "Gamma Enterprises delivers cutting-edge solutions for global challenges."
+        "other_information": "Gamma solutions for global challenges."
       },
       {
         "name": "Dynamics",
@@ -34,7 +34,7 @@
         "website": "http://www.deltadyamics.com",
         "image": "membersimage/logo-4.jpeg",
         "membership_level": "Gold",
-        "other_information": "Delta Dynamics specializes in innovative software solutions for businesses."
+        "other_information": "Dynamics specializes in innovative solutions for businesses."
       },
       {
         "name": "Epsilon",
@@ -43,7 +43,7 @@
         "website": "http://www.epsilonolutions.com",
         "image": "membersimage/logo-5.jpeg",
         "membership_level": "Silver",
-        "other_information": "Epsilon Solutions provides tailor-made software solutions for enterprises."
+        "other_information": "Epsilon pioneers in the food market"
       },
       {
         "name": "Zeta Tech",
@@ -61,7 +61,7 @@
         "website": "http://www.etaent.com",
         "image": "membersimage/logo-7.jpeg",
         "membership_level": "Gold",
-        "other_information": "Eta Enterprises pioneers revolutionary approaches to business development."
+        "other_information": "Enterprises pioneers revolutionary approaches to business development."
       },
       {
         "name": "Solutions",
@@ -70,7 +70,7 @@
         "website": "http://www.thetaolution.com",
         "image": "membersimage/logo-8.jpeg",
         "membership_level": "Silver",
-        "other_information": "Theta Solutions delivers comprehensive software solutions for enterprises."
+        "other_information": "Solutions delivers food delivery"
       }
     ]
 }

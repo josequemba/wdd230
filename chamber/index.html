@@ -110,24 +110,27 @@
             <div class="weather-card">
                 <div class="weather-info">
                     <h2>Weather Forecast</h2>
-                    <p>Location: <span id="location">Provo, US</span></p>
+                    <p>Location: <span id="location"></span></p>
                     <p>Date: <span id="date">Today</span></p>
-                    <p>Temperature: <span id="temperature">XX°F</span></p>
-                    <p>Weather: <span id="weather">Sunny</span></p>
-                    <p>Wind Speed: <span id="wind-speed">X miles/h</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Description: <span id="weather-description">Sunny</span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                    <div id="icon-one"></div>
                 </div>
                 <div class="weather-forecast">
                     <div class="weather-card">
-                        <h3>Today</h3>
-                        <p>Temperature: XX°F</p>
-                        <p>Weather: Sunny</p>
-                        <p>Wind Speed: X miles/h</p>
+                        <h3 id="tomorrow">Tomorrow</h3>
+                        <p id="temperature-one"></p>
+                        <p id="weather-description-one"></p>
+                        <p id="wind-speed-one"></p>
+                        <div id="icon-two"></div>
                     </div>
                     <div class="weather-card">
-                        <h3>Tomorrow</h3>
-                        <p>Temperature: XX°F</p>
-                        <p>Weather: Cloudy</p>
-                        <p>Wind Speed: X miles/h</p>
+                        <h3 id="after-tomorrow"></h3>
+                        <p id="temperature-two"></p>
+                        <p id="weather-description-two"></p>
+                        <p id="wind-speed-two"></p>
+                        <div id="icon-three"></div>
                     </div>
                 </div>
             </div>
@@ -196,5 +199,6 @@
         </div>
     </footer>
     <script src="script/chamber.js"></script>
+    <script src="script/weather.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ const weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday
 const dayName = weekDay[dateNow.getDay()];
 
 if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(function(position) {
+    navigator.geolocation.getCurrentPosition(function (position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&cnt=16&units=imperial&appid=${apiKey2}`
@@ -48,13 +48,13 @@ if ("geolocation" in navigator) {
                 if (response.ok) {
                     const data = await response.json();
                     displayResults2(data);
-                    console.table(data);
+                    //console.table(data);
                 }
             } catch (error) {
                 console.error(error);
             }
         }
-        
+
         apiFetch(url);
         apiFetch2(url2);
 
@@ -86,9 +86,75 @@ if ("geolocation" in navigator) {
             iconOne.innerHTML = `<img src="${iconsrc}" alt="Weather Icon">`;
         }
 
-    }, function(error) {
+    }, function (error) {
         console.error("Error getting location:", error.message);
     });
 } else {
     console.error("Geolocation is not supported by this browser.");
 }
+
+/* display members */
+const urlMembers = 'data/members.json';
+const spotLights = document.querySelector("#spotlight-advertisements");
+
+async function apiFetch(link) {
+    try {
+        const response = await fetch(link);
+        if (response.ok) {
+            const data = await response.json();
+            displayMembers(data.members);
+            console.table(data);
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+apiFetch(urlMembers);
+
+function displayMembers(data) {
+    const qualifiedMembers = data.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+
+    const numAdvertisementsToShow = Math.floor(Math.random() * 2) + 2; // Random number between 2 and 3
+    const selectedMembers = [];
+    while (selectedMembers.length < numAdvertisementsToShow && qualifiedMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
+        selectedMembers.push(qualifiedMembers.splice(randomIndex, 1)[0]);
+    }
+
+    selectedMembers.forEach(element => {
+        if (element.membership_level == "Silver" || element.membership_level == "Gold") {
+            const spotDiv = document.createElement('div');
+            spotDiv.className = "spotlight-member";
+            spotDiv.innerHTML = `<img src="images/${element.image}" alt="${element.name}" width="150">
+                                    <h3>${element.name}</h3>
+                                    <p>${element.membership_level}</p>
+                                    `;
+            spotLights.appendChild(spotDiv);
+        }
+    });
+}
+
+/* banner */
+function isWeekday() {
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday, Tuesday, and Wednesday
+}
+
+function toggleBanner() {
+    const banner = document.getElementById('banner');
+    if (isWeekday()) {
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
+}
+
+function closeBanner() {
+    const banner = document.getElementById('banner');
+    banner.style.display = 'none';
+}
+
+window.onload = function () {
+    toggleBanner();
+};

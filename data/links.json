@@ -116,6 +116,15 @@
                     "title":"Chamber Home Page - Directory"
                 }
             ]
+        },
+        { 
+            "week": "Week 06:",
+            "links": [
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Home Page - Updates"
+                }
+            ]
         }
     ]
     

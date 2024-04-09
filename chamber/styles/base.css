@@ -961,3 +961,9 @@ button:hover {
   cursor: pointer;
   color: #fff;
 }
+
+main h1 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  text-align: center;
+}

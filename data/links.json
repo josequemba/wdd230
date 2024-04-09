@@ -125,6 +125,15 @@
                     "title":"Chamber Home Page - Updates"
                 }
             ]
+        },
+        { 
+            "week": "Week 07:",
+            "links": [
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Website Project Submission (1 of 2)—Development Standards"
+                }
+            ]
         }
     ]
     

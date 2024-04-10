@@ -20,7 +20,7 @@ const apiKey2 = 'a446869a0965642e8eca031517d68e74';
 
 const dateNow = new Date();
 const weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const dayName = weekDay[dateNow.getDay()];
+const dayName = weekDay[dateNow.getDay()+1];
 
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {

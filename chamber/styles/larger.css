@@ -121,4 +121,16 @@
     .form-a fieldset {
         width: 100%;
     }
+    /* Table */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    th, td {
+        padding: .05rem;
+        text-align: center;
+    }
+  
 }

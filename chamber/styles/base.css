@@ -757,6 +757,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 th, td {
   padding: 8px;
